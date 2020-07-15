@@ -8,11 +8,11 @@
 		<version>2.3.1.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.currency.microservice</groupId>
-	<artifactId>limits-service</artifactId>
+	<groupId>com.microservice.namingServer</groupId>
+	<artifactId>spring-cloud-eureka-naming-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>limits-service</name>
-	<description>Currency Exchange project</description>
+	<name>spring-cloud-eureka-naming-server</name>
+	<description>Netflix Eureka naming server for dynamic load balancing</description>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -26,23 +26,14 @@
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-config</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-			<exclusions>
-				<exclusion>
-					<groupId>com.fasterxml.jackson.dataformat</groupId>
-					<artifactId>jackson-dataformat-xml</artifactId>
-				</exclusion>
-			</exclusions>
+			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
 		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
